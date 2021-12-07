@@ -1,2 +1,2 @@
 # ToDoList
-Created a to-do list using Angular.
+Created a to-do list in Angular.
