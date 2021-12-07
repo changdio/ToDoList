@@ -1,0 +1,14 @@
+div {
+  background-color: azure;
+  margin: auto;
+  width: 500px;
+  border: 2px solid;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+hr {
+  border: solid 0.1px dimgrey;
+}
+
+

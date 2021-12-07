@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todolist';
+
+  data: string[] = [];
+
+  addlist(item: string){
+    console.log(item)
+    this.data.push(item);
+  }
+
+
 }
