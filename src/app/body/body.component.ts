@@ -1,24 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { ITodo } from '../models/todo.model';
 
 @Component({
   selector: 'app-body',
   templateUrl: './body.component.html',
-  styleUrls: ['./body.component.css']
+  styleUrls: ['./body.component.css'],
 })
+
 export class BodyComponent implements OnInit {
+  data: ITodo[] = [];
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  addlist(item: string) {
+    const todoitem: ITodo = { text: item, creationDate: new Date() };
+    this.data.push(todoitem);
   }
-  data: {text:string,date:Date}[] = [];
-
-  addlist(item: string){
-    console.log(item)
-    this.data.push({
-      text:item,
-      date:new Date()
-    });
-  }
-
 }

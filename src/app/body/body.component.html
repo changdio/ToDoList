@@ -7,7 +7,7 @@
   <button (click)="addlist(item.value)">Add to List</button>
 
   <ul>
-    <li *ngFor="let i of data">{{i.text | titlecase}} - {{i.date | date:'shortTime'}}</li>
+    <li *ngFor="let i of data">{{i.text | titlecase}} - {{i.creationDate | date:'shortTime'}}</li>
   </ul>
   </div>
 
