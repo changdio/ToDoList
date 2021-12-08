@@ -11,11 +11,14 @@ export class BodyComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  data: string[] = [];
+  data: {text:string,date:Date}[] = [];
 
   addlist(item: string){
     console.log(item)
-    this.data.push(item);
+    this.data.push({
+      text:item,
+      date:new Date()
+    });
   }
 
 }
